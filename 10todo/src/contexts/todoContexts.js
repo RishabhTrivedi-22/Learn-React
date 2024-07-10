@@ -8,10 +8,10 @@ export const TodoContext = createContext({
       completeStatus: false
     }
   ],
-  addTask: (taskName) => {},
-  updateTask: (id, taskName) => {},
+  addTask: (taskItem) => {},
+  updateTask: (id, taskItem) => {},
   deleteTasks: (id) => {},
-  toggelStatus: (id) => {}
+  toggleStatus: (id) => {}
 })
 
 export const useTodo = () => {
