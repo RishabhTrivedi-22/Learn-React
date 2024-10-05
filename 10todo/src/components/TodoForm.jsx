@@ -10,7 +10,7 @@ function TodoForm() {
 
     if (!todo) return;
 
-    addTask({ taskName: todo, completed: false });
+    addTask({ taskName: todo, completeStatus: false });
     setTodo("");
   };
 

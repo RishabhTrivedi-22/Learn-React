@@ -31,7 +31,8 @@ function App() {
   };
 
   useEffect(() => {
-    const todoList = JSON.parse(localStorage.getItem("todos"));
+    const todoList = JSON.parse(localStorage.getItem("Todos"));
+    console.log(todoList);
 
     if(todoList && todoList.length > 0) {
       setTodos(todoList)
@@ -39,7 +40,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos))
+    localStorage.setItem('Todos', JSON.stringify(todos))
   }, [todos])
 
   return (
